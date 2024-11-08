@@ -9,6 +9,7 @@ local spec = {
     --lazy = false,
     keys = keys,
     --cond = false,
+    --enabled = false,
 }
 
 return spec

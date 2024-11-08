@@ -79,4 +79,7 @@
 - https://github.com/OXY2DEV/markview.nvim
 	- https://github.com/nvim-treesitter/nvim-treesitter
 	- https://github.com/nvim-tree/nvim-web-devicons
+- https://github.com/rhysd/migemo-search.vim
+- https://github.com/jghauser/mkdir.nvim
+- https://github.com/svampkorg/moody.nvim
 ---

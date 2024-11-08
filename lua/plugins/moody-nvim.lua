@@ -14,6 +14,7 @@ local spec = {
     event = events,
     opts = opts,
     --cond = false,
+    --enabled = false,
 }
 
 return spec
