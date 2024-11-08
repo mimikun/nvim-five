@@ -61,4 +61,7 @@
 	- https://github.com/pauchiner/pastelnight.nvim
 	- https://github.com/folke/tokyonight.nvim
 	- https://github.com/projekt0n/github-nvim-theme
+- https://github.com/folke/lazydev.nvim
+	- https://github.com/Bilal2453/luvit-meta
+	- https://github.com/justinsgithub/wezterm-types
 ---
