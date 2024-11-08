@@ -37,7 +37,6 @@ local spec = {
     cmd = cmds,
     opts = opts,
     --cond = false,
-    -- NOTE: easymotion plugin
     --enabled = false,
 }
 
