@@ -87,4 +87,6 @@
 	- https://github.com/rcarriga/nvim-notify
 	- https://github.com/iguanacucumber/magazine.nvim
 - https://github.com/windwp/nvim-autopairs
+- https://github.com/kevinhwang91/nvim-bqf
+	- https://github.com/nvim-treesitter/nvim-treesitter
 ---

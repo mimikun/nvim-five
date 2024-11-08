@@ -23,10 +23,10 @@ local spec = {
     --lazy = false,
     ft = "qf",
     cmd = cmds,
-    --event = "VeryLazy",
     dependencies = dependencies,
     opts = opts,
     --cond = false,
+    --enabled = false,
 }
 
 return spec
