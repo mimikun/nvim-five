@@ -1,16 +1,17 @@
 ---@type table
 local cmds = {
-    "TransparentEnable",
-    "TransparentDisable",
-    "TransparentToggle",
+    "RustAnalyzer",
+    "Rustc",
+    "RustLsp",
 }
 
 ---@type LazySpec
 local spec = {
-    "xiyaowong/transparent.nvim",
+    "mrcjkb/rustaceanvim",
+    version = "^5",
+    -- NOTE: rustaceanvim is already lazy
     lazy = false,
     cmd = cmds,
-    opts = {},
     --cond = false,
     --enabled = false,
 }
