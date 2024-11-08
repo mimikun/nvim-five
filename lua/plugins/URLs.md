@@ -57,4 +57,8 @@
 - https://github.com/OXY2DEV/helpview.nvim
 	- https://github.com/nvim-treesitter/nvim-treesitter
 - https://github.com/smoka7/hop.nvim
+- https://github.com/vague2k/huez.nvim
+	- https://github.com/pauchiner/pastelnight.nvim
+	- https://github.com/folke/tokyonight.nvim
+	- https://github.com/projekt0n/github-nvim-theme
 ---
