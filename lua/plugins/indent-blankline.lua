@@ -75,6 +75,7 @@ local spec = {
     event = "BufEnter",
     opts = opts,
     --cond = false,
+    --enabled = false,
 }
 
 return spec
