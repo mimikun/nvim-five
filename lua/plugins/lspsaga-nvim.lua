@@ -34,6 +34,7 @@ local spec = {
     dependencies = dependencies,
     opts = opts,
     --cond = false,
+    --enabled = false,
 }
 
 return spec
