@@ -9,7 +9,7 @@ local spec = {
     "OXY2DEV/markview.nvim",
     --commit = "3e5ceec5beab5730aa3a730126b229801b449f0f",
     lazy = false,
-    --ft = "markdown",
+    ft = "markdown",
     cmd = "Markview",
     event = "BufEnter",
     dependencies = dependencies,
@@ -24,7 +24,6 @@ local spec = {
         markview.commands.disableAll()
     end,
     --cond = false,
-    -- NOTE: markdown-render plugin
     --enabled = false,
 }
 

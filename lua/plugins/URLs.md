@@ -76,4 +76,7 @@
 	- https://github.com/saadparwaiz1/cmp_luasnip
 	- https://github.com/rafamadriz/friendly-snippets
 - https://github.com/mei28/luminate.nvim
+- https://github.com/OXY2DEV/markview.nvim
+	- https://github.com/nvim-treesitter/nvim-treesitter
+	- https://github.com/nvim-tree/nvim-web-devicons
 ---
