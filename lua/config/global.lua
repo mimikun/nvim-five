@@ -1,5 +1,7 @@
 local global = {}
 
+local CONFIG_VERSION = "5.0.0"
+
 local os_name = vim.uv.os_uname().sysname
 local total_memory = vim.uv.get_total_memory()
 local host_name = vim.fn.hostname():lower()
@@ -19,6 +21,9 @@ local human_rights = {
     available_parallelism = 14,
     media_type = "SSD",
 }
+
+---@type string
+global.config_version = CONFIG_VERSION
 
 ---@type boolean
 global.is_mac = os_name == "Darwin"
