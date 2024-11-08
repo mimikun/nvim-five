@@ -35,9 +35,9 @@ local spec = {
     "j-hui/fidget.nvim",
     lazy = false,
     cmd = "Fidget",
-    --event = "VeryLazy",
     opts = opts,
     --cond = false,
+    --enabled= false,
 }
 
 return spec

@@ -10,6 +10,7 @@ local spec = {
     --lazy = false,
     cmd = cmds,
     --cond = false,
+    --enabled= false,
 }
 
 return spec
