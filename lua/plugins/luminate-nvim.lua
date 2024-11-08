@@ -5,6 +5,7 @@ local spec = {
     event = "VeryLazy",
     opts = {},
     --cond = false,
+    --enabled = false,
 }
 
 return spec

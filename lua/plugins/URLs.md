@@ -75,4 +75,5 @@
 - https://github.com/L3MON4D3/LuaSnip
 	- https://github.com/saadparwaiz1/cmp_luasnip
 	- https://github.com/rafamadriz/friendly-snippets
+- https://github.com/mei28/luminate.nvim
 ---
