@@ -54,4 +54,7 @@
 - https://github.com/creativenull/dotfyle-metadata.nvim
 - https://github.com/j-hui/fidget.nvim
 - https://github.com/adigitoleo/haunt.nvim
+- https://github.com/OXY2DEV/helpview.nvim
+	- https://github.com/nvim-treesitter/nvim-treesitter
+- https://github.com/smoka7/hop.nvim
 ---
