@@ -82,4 +82,8 @@
 - https://github.com/rhysd/migemo-search.vim
 - https://github.com/jghauser/mkdir.nvim
 - https://github.com/svampkorg/moody.nvim
+- https://github.com/folke/noice.nvim
+	- https://github.com/MunifTanjim/nui.nvim
+	- https://github.com/rcarriga/nvim-notify
+	- https://github.com/iguanacucumber/magazine.nvim
 ---
