@@ -12,7 +12,7 @@ local spec = {
     cmd = cmds,
     opts = {},
     --cond = false,
-    --enabled= false,
+    --enabled = false,
 }
 
 return spec

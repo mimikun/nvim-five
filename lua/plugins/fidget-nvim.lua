@@ -37,7 +37,7 @@ local spec = {
     cmd = "Fidget",
     opts = opts,
     --cond = false,
-    --enabled= false,
+    --enabled = false,
 }
 
 return spec
