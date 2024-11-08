@@ -10,7 +10,6 @@ local spec = {
     event = "InsertEnter",
     opts = opts,
     --cond = false,
-    -- NOTE: autopair plugin
     --enabled = false,
 }
 

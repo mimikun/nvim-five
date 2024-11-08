@@ -86,4 +86,5 @@
 	- https://github.com/MunifTanjim/nui.nvim
 	- https://github.com/rcarriga/nvim-notify
 	- https://github.com/iguanacucumber/magazine.nvim
+- https://github.com/windwp/nvim-autopairs
 ---
