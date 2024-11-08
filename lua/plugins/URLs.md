@@ -53,4 +53,5 @@
 - https://github.com/monaqa/dial.nvim
 - https://github.com/creativenull/dotfyle-metadata.nvim
 - https://github.com/j-hui/fidget.nvim
+- https://github.com/adigitoleo/haunt.nvim
 ---
