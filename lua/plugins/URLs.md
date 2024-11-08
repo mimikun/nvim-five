@@ -1,0 +1,54 @@
+# plugin repo url list
+
+- https://github.com/
+
+---
+- https://github.com/goolord/alpha-nvim
+	- https://github.com/nvim-tree/nvim-web-devicons
+	- https://github.com/nvim-lua/plenary.nvim
+- https://github.com/rainbowhxch/accelerated-jk.nvim
+- https://github.com/romgrk/barbar.nvim
+	- https://github.com/lewis6991/gitsigns.nvim
+	- https://github.com/nvim-tree/nvim-web-devicons
+- https://github.com/uga-rosa/ccc.nvim
+- https://github.com/alker0/chezmoi.vim
+- https://github.com/olimorris/codecompanion.nvim
+	- https://github.com/nvim-lua/plenary.nvim
+	- https://github.com/nvim-treesitter/nvim-treesitter
+	- https://github.com/iguanacucumber/magazine.nvim
+	- https://github.com/nvim-telescope/telescope.nvim
+	- https://github.com/stevearc/dressing.nvim
+- https://github.com/uga-rosa/translate.nvim
+- https://github.com/xiyaowong/transparent.nvim
+- https://github.com/numToStr/Comment.nvim
+	- https://github.com/JoosepAlviste/nvim-ts-context-commentstring
+- https://github.com/lewis6991/gitsigns.nvim
+- https://github.com/stevearc/dressing.nvim
+- https://github.com/JoosepAlviste/nvim-ts-context-commentstring
+- https://github.com/nvim-telescope/telescope.nvim
+	- https://github.com/nvim-tree/nvim-web-devicons
+	- https://github.com/nvim-lua/plenary.nvim
+	- https://github.com/danielfalk/smart-open.nvim
+	- https://github.com/nvim-telescope/telescope-fzf-native.nvim
+- https://github.com/danielfalk/smart-open.nvim
+	- https://github.com/kkharji/sqlite.lua
+	- https://github.com/nvim-telescope/telescope-fzf-native.nvim
+- https://github.com/nvim-telescope/telescope-fzf-native.nvim
+- https://github.com/kkharji/sqlite.lua
+- https://github.com/zbirenbaum/copilot.lua
+- https://github.com/CopilotC-Nvim/CopilotChat.nvim
+	- https://github.com/zbirenbaum/copilot.lua
+	- https://github.com/nvim-lua/plenary.nvim
+- https://github.com/saecki/crates.nvim
+- https://github.com/nvimdev/template.nvim
+- https://github.com/folke/snacks.nvim
+	- https://github.com/echasnovski/mini.nvim
+	- https://github.com/nvim-tree/nvim-web-devicons
+- https://github.com/folke/snacks.nvim
+	- https://github.com/echasnovski/mini.nvim
+	- https://github.com/nvim-tree/nvim-web-devicons
+- https://github.com/Kurama622/profile.nvim
+	- https://github.com/3rd/image.nvim
+- https://github.com/3rd/image.nvim
+- https://github.com/monaqa/dial.nvim
+---
