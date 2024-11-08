@@ -72,4 +72,7 @@
 	- https://github.com/nvim-tree/nvim-web-devicons
 	- https://github.com/lewis6991/gitsigns.nvim
 	- https://github.com/SmiteshP/nvim-navic
+- https://github.com/L3MON4D3/LuaSnip
+	- https://github.com/saadparwaiz1/cmp_luasnip
+	- https://github.com/rafamadriz/friendly-snippets
 ---
