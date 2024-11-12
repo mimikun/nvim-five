@@ -1,3 +1,5 @@
+-- TODO:
+
 local global = require("config.global")
 local settings = require("config.settings")
 
