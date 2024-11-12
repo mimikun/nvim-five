@@ -14,8 +14,6 @@ local cmp_config_sources = {
         },
     },
     { name = "emoji" },
-    { name = "orgmode" },
-    { name = "dotenv" },
     { name = "crates" },
 }
 

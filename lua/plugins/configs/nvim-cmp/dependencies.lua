@@ -9,8 +9,6 @@ local dependencies = {
     "onsails/lspkind.nvim",
     "folke/lazydev.nvim",
     "hrsh7th/cmp-emoji",
-    "nvim-orgmode/orgmode",
-    "SergioRibera/cmp-dotenv",
     "rcarriga/cmp-dap",
 }
 

@@ -1,10 +1,8 @@
 ---@type LazySpec
 local spec = {
-    --"hrsh7th/nvim-cmp",
     "iguanacucumber/magazine.nvim",
     name = "nvim-cmp",
     lazy = false,
-    --event = "VeryLazy",
     dependencies = require("plugins.configs.nvim-cmp.dependencies"),
     config = function()
         local cmp = require("cmp")
@@ -91,6 +89,7 @@ local spec = {
         })
     end,
     --cond = false,
+    --enabled = false,
 }
 
 return spec
