@@ -10,7 +10,7 @@ local dependencies = {
     "MunifTanjim/nui.nvim",
     "rcarriga/nvim-notify",
     --"hrsh7th/nvim-cmp",
-    { "iguanacucumber/magazine.nvim", name = "nvim-cmp" },
+    --{ "iguanacucumber/magazine.nvim", name = "nvim-cmp" },
 }
 
 ---@type NoiceConfig
@@ -20,7 +20,7 @@ local opts = {
         override = {
             ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
             ["vim.lsp.util.stylize_markdown"] = true,
-            ["cmp.entry.get_documentation"] = true,
+            --["cmp.entry.get_documentation"] = true,
         },
     },
     -- you can enable a preset for easier configuration

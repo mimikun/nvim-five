@@ -17,7 +17,7 @@ local opts = {
     },
     integrations = {
         lspconfig = true,
-        cmp = true,
+        --cmp = true,
     },
 }
 
