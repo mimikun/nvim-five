@@ -11,6 +11,7 @@ local spec = {
     --lazy = false,
     cmd = "ShowIisca",
     dependencies = { "nvim-telescope/telescope.nvim" },
+    opts = {},
     cond = enabled,
     enabled = enabled,
 }
