@@ -173,4 +173,6 @@
 	- https://github.com/rcarriga/cmp-dap
 	- https://github.com/zbirenbaum/copilot.lua
 	- https://github.com/zbirenbaum/copilot-cmp
+- https://github.com/Abizrh/iisca.nvim
+	- https://github.com/nvim-telescope/telescope.nvim
 ---
