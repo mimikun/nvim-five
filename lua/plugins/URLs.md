@@ -158,4 +158,6 @@
 - https://github.com/folke/which-key.nvim
 	- https://github.com/nvim-tree/nvim-web-devicons
 	- https://github.com/echasnovski/mini.icons
+- https://github.com/nvimtools/none-ls.nvim
+	- https://github.com/nvim-lua/plenary.nvim
 ---
