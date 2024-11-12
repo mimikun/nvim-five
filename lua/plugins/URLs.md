@@ -160,4 +160,17 @@
 	- https://github.com/echasnovski/mini.icons
 - https://github.com/nvimtools/none-ls.nvim
 	- https://github.com/nvim-lua/plenary.nvim
+- https://github.com/iguanacucumber/magazine.nvim
+	- https://github.com/hrsh7th/cmp-nvim-lsp
+	- https://github.com/L3MON4D3/LuaSnip
+	- https://github.com/saadparwaiz1/cmp_luasnip
+	- https://github.com/hrsh7th/cmp-buffer
+	- https://github.com/hrsh7th/cmp-cmdline
+	- https://github.com/hrsh7th/cmp-path
+	- https://github.com/onsails/lspkind.nvim
+	- https://github.com/folke/lazydev.nvim
+	- https://github.com/hrsh7th/cmp-emoji
+	- https://github.com/rcarriga/cmp-dap
+	- https://github.com/zbirenbaum/copilot.lua
+	- https://github.com/zbirenbaum/copilot-cmp
 ---
