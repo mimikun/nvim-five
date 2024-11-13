@@ -2,13 +2,6 @@ local global = require("config.global")
 
 local settings = {}
 
----use ai assistant
--- NOTE: AI assistants will only be enabled at home
--- (i.e. only if it is a human right)
----@deprecated remove soon
----@type boolean
-settings.use_ai = global.is_human_rights
-
 ---use denops
 ---@type boolean
 settings.use_denops = false
@@ -25,18 +18,8 @@ settings.need_all_parsers = false
 ---@type boolean
 settings.need_all_servers = false
 
--- NOTE: Only one can be set to TRUE
 ---@type boolean
 settings.use_none_ls = true
-
----@type boolean
-settings.use_efmls = false
-
----@type boolean
-settings.use_conform = false
-
----@type boolean
-settings.use_guard = false
 
 ---need all telescope extensions
 ---@type boolean
