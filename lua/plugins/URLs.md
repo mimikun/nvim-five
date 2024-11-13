@@ -175,4 +175,9 @@
 	- https://github.com/zbirenbaum/copilot-cmp
 - https://github.com/Abizrh/iisca.nvim
 	- https://github.com/nvim-telescope/telescope.nvim
+- https://github.com/2kabhishek/octohub.nvim
+	- https://github.com/2kabhishek/utils.nvim
+	- https://github.com/nvim-telescope/telescope.nvim
+- https://github.com/NachoNievaG/atac.nvim
+	- https://github.com/akinsho/toggleterm.nvim
 ---
