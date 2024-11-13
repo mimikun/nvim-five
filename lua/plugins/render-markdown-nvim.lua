@@ -5,13 +5,16 @@ local dependencies = {
 }
 
 ---@type table
+local ft = { "markdown", "vimwiki", "Avante" }
+
+---@type table
 local opts = require("plugins.configs.render-markdown-nvim.opts")
 
 ---@type LazySpec
 local spec = {
     "MeanderingProgrammer/render-markdown.nvim",
     --lazy = false,
-    ft = { "markdown", "vimwiki" },
+    ft = ft,
     cmd = "RenderMarkdown",
     event = "BufEnter",
     dependencies = dependencies,
