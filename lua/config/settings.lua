@@ -48,4 +48,23 @@ end
 -- NOTE: only be enabled at Home-azusa and Work-Windows
 settings.use_codecompanion = check_codecompanion()
 
+---check if avante.nvim is available
+local check_avante = function()
+    if global.is_azusa then
+        return true
+    else
+        if global.is_work then
+            if global.is_windows then
+                return true
+            else
+                return false
+            end
+        end
+    end
+end
+
+---use avante.nvim
+-- NOTE: only be enabled at Home-azusa and Work-Windows
+settings.use_avante = check_avante()
+
 return settings
