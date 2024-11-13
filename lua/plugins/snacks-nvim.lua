@@ -49,8 +49,6 @@ local spec = {
     priority = 1000,
     lazy = false,
     cmd = cmds,
-    --keys = "",
-    --event = "VeryLazy",
     dependencies = dependencies,
     config = function()
         require("snacks").setup(opts)

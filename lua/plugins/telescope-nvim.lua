@@ -1,3 +1,5 @@
+-- TODO: its
+
 ---@type LazySpec
 local spec = {
     "nvim-telescope/telescope.nvim",
@@ -58,6 +60,7 @@ local spec = {
         --telescope.load_extension("repos")
     end,
     --cond = false,
+    --enabled = false,
 }
 
 return spec
