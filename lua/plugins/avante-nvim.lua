@@ -1,3 +1,5 @@
+local global = require("config.global")
+
 ---@type boolean
 local cond = require("config.settings").use_avante
 
@@ -11,7 +13,7 @@ local build_cmd = {
 }
 
 ---@type string
-local build = require("config.global").is_windows and build_cmd.windows and build_cmd.linux
+local build = global.is_windows and build_cmd.windows and build_cmd.linux
 
 ---@type table
 local cmds = {
@@ -34,24 +36,53 @@ local dependencies = {
     "MunifTanjim/nui.nvim",
     "nvim-tree/nvim-web-devicons",
     "zbirenbaum/copilot.lua",
-    {
-        -- TODO: config it
-        "HakonHarnes/img-clip.nvim",
-        event = "VeryLazy",
-        opts = {
-            -- recommended settings
-            default = {
-                embed_image_as_base64 = false,
-                prompt_for_file_name = false,
-                drag_and_drop = {
-                    insert_mode = true,
-                },
-                -- required for Windows users
-                --use_absolute_path = true,
-            },
+    "HakonHarnes/img-clip.nvim",
+    "MeanderingProgrammer/render-markdown.nvim",
+    -- BUG: can't work
+    --"takeshiD/avante-status.nvim",
+}
+
+---@type string
+local provider = global.is_work and "ollama" or "copilot"
+
+---@type table
+local opts = {
+    provider = provider,
+    auto_suggestions_provider = provider,
+    vendors = {
+        ---@type AvanteProvider
+        ollama = {
+            ["local"] = true,
+            endpoint = "127.0.0.1:11434/v1",
+            model = "codegemma",
+            parse_curl_args = function(opts, code_opts)
+                return {
+                    url = opts.endpoint .. "/chat/completions",
+                    headers = {
+                        ["Accept"] = "application/json",
+                        ["Content-Type"] = "application/json",
+                    },
+                    body = {
+                        model = opts.model,
+                        -- you can make your own message, but this is very advanced
+                        messages = require("avante.providers").copilot.parse_messages(code_opts),
+                        max_tokens = 2048,
+                        stream = true,
+                    },
+                }
+            end,
+            parse_response = function(data_stream, event_state, opts)
+                require("avante.providers").copilot.parse_response(data_stream, event_state, opts)
+            end,
         },
     },
-    "MeanderingProgrammer/render-markdown.nvim",
+    behaviour = {
+        -- Experimental stage
+        auto_suggestions = false,
+        auto_set_keymaps = true,
+        auto_apply_diff_after_generation = false,
+        support_paste_from_clipboard = false,
+    },
 }
 
 ---@type LazySpec
@@ -64,9 +95,7 @@ local spec = {
     --keys = "",
     event = "VeryLazy",
     dependencies = dependencies,
-    opts = {
-        -- add any opts here
-    },
+    opts = opts,
     cond = cond,
     enabled = cond,
 }
