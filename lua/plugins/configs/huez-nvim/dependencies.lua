@@ -51,6 +51,7 @@ local other = {
     -- need other dependencies
     { "asperan/chstr.nvim", dependencies = { "rktjmp/lush.nvim" }, optional = true },
     { "b0o/lavi.nvim", dependencies = { "rktjmp/lush.nvim" }, optional = true },
+    { "zenbones-theme/zenbones.nvim", dependencies = { "rktjmp/lush.nvim" }, optional = true },
     -- other dependencies
     { "rktjmp/lush.nvim", optional = true },
     { "Iron-E/nvim-highlite", optional = true },
