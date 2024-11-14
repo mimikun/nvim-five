@@ -8,7 +8,7 @@ cond = true
 
 ---@type table
 local build_cmd = {
-    linux = "make",
+    linux = "make BUILD_FROM_SOURCE=true",
     windows = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false",
 }
 
@@ -38,8 +38,7 @@ local dependencies = {
     "zbirenbaum/copilot.lua",
     "HakonHarnes/img-clip.nvim",
     "MeanderingProgrammer/render-markdown.nvim",
-    -- BUG: can't work
-    --"takeshiD/avante-status.nvim",
+    "takeshiD/avante-status.nvim",
 }
 
 ---@type string
@@ -88,8 +87,8 @@ local opts = {
 ---@type LazySpec
 local spec = {
     "yetone/avante.nvim",
-    build = build,
     version = false,
+    build = build,
     lazy = false,
     cmd = cmds,
     --keys = "",

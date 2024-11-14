@@ -1,70 +1,7 @@
--- TODO:
-
 local global = require("config.global")
-local settings = require("config.settings")
-
----@type LazySpec
-local spec = {
-    "mimikun/spec-template",
-    --dir = ""
-    --url = ""
-    --name = ""
-    --dev = false
-    --build = "",
-    --branch = "",
-    --tag = "",
-    --commit = "",
-    --version = "",
-    --lazy = false,
-    enabled = false,
-    --ft = "",
-    --cmd = "CMDNAME",
-    --keys = "",
-    --event = "VeryLazy",
-    --dependencies = { "nvim-tree/nvim-web-devicons" },
-    --init = function()
-    --    INIT
-    --end,
-    --opts = {
-    --    OPTS
-    --},
-    --config = function()
-    --    INIT
-    --end,
-    cond = false,
-    --main = ""
-    --pin = false,
-    --submodules = false,
-    --module = false,
-    --priority = 1000,
-    --optional = false,
-}
-
-return spec
-
---[[
----@type boolean
-local need_all_servers = settings.need_all_servers
 
 ---@type boolean
-local is_human_rights = global.is_human_rights
-
----@type table
-local opts = {
-    max_concurrent_installers = is_human_rights and 4 or 1,
-    ui = {
-        check_outdated_packages_on_open = true,
-        border = "rounded",
-        width = 0.88,
-        height = 0.8,
-        icons = {
-            package_installed = "󰗠",
-            package_pending = "󰊠",
-            package_uninstalled = "󰅙",
-        },
-    },
-    log_level = vim.log.levels.DEBUG,
-}
+local need_all_servers = require("config.settings").need_all_servers
 
 ---@type LazySpec
 local spec = {
@@ -72,14 +9,28 @@ local spec = {
     --lazy = false,
     cmds = require("plugins.configs.mason-nvim.cmds"),
     event = "VeryLazy",
-    dependencies = require("plugins.configs.mason-nvim.deps"),
+    dependencies = require("plugins.configs.mason-nvim.dependencies"),
     config = function()
         local lspconfig = require("lspconfig")
         local mason_lspconfig = require("mason-lspconfig")
         local mason_nvim_dap = require("mason-nvim-dap")
 
         require("neoconf").setup({})
-        require("mason").setup(opts)
+        require("mason").setup({
+            max_concurrent_installers = global.is_human_rights and 4 or 1,
+            ui = {
+                check_outdated_packages_on_open = true,
+                border = "rounded",
+                width = 0.88,
+                height = 0.8,
+                icons = {
+                    package_installed = "󰗠",
+                    package_pending = "󰊠",
+                    package_uninstalled = "󰅙",
+                },
+            },
+            log_level = vim.log.levels.DEBUG,
+        })
 
         -- LSP
         mason_lspconfig.setup({
@@ -142,35 +93,9 @@ local spec = {
         end
 
         -- All-in-one Linter, Formatter
-        if settings.use_none_ls then
-            require("mason-null-ls").setup({
-                handlers = {},
-            })
-        elseif settings.use_efmls then
-            -- TODO: mason-efmls
-            print("WIP")
-            --require("mason-efmls").setup({})
-            -- Only Linter or Only Formatter
-        else
-            require("mason-nvim-lint").setup({
-                -- TODO: select
-                --ensure_installed = require("plugins.configs.mason-nvim-lint.ensure_installed"),
-                ensure_installed = {},
-                automatic_installation = is_human_rights,
-                quiet_mode = false,
-            })
-            if settings.use_conform then
-                require("mason-conform").setup({
-                    -- TODO: select
-                    --ignore_install = require("plugins.configs.mason-conform-nvim.ignore_install"),
-                    ignore_install = {},
-                })
-            elseif settings.use_guard then
-                -- TODO: mason-guard
-                print("wip")
-                --require("mason-guard").setup({})
-            end
-        end
+        require("mason-null-ls").setup({
+            handlers = {},
+        })
 
         -- DAP
         mason_nvim_dap.setup({
@@ -188,7 +113,7 @@ local spec = {
         })
     end,
     --cond = false,
+    --enabled = false,
 }
 
 return spec
-]]

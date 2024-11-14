@@ -180,4 +180,29 @@
 	- https://github.com/nvim-telescope/telescope.nvim
 - https://github.com/NachoNievaG/atac.nvim
 	- https://github.com/akinsho/toggleterm.nvim
+- https://github.com/yetone/avante.nvim
+	- https://github.com/nvim-treesitter/nvim-treesitter
+	- https://github.com/stevearc/dressing.nvim
+	- https://github.com/nvim-lua/plenary.nvim
+	- https://github.com/MunifTanjim/nui.nvim
+	- https://github.com/nvim-tree/nvim-web-devicons
+	- https://github.com/zbirenbaum/copilot.lua
+	- https://github.com/HakonHarnes/img-clip.nvim
+	- https://github.com/MeanderingProgrammer/render-markdown.nvim
+- https://github.com/HakonHarnes/img-clip.nvim
+- https://github.com/williamboman/mason.nvim
+	- https://github.com/neovim/nvim-lspconfig
+	- https://github.com/williamboman/mason-lspconfig.nvim
+	- https://github.com/mfussenegger/nvim-dap
+	- https://github.com/jay-babu/mason-nvim-dap.nvim
+	- https://github.com/folke/lazydev.nvim
+	- https://github.com/folke/neoconf.nvim
+	- https://github.com/Bilal2453/luvit-meta
+	- https://github.com/justinsgithub/wezterm-types
+	- https://github.com/hrsh7th/cmp-nvim-lsp
+	- https://github.com/zapling/mason-lock.nvim
+	- https://github.com/b0o/schemastore.nvim
+	- https://github.com/Zeioth/mason-extra-cmds
+	- https://github.com/nvimtools/none-ls.nvim
+	- https://github.com/jay-babu/mason-null-ls.nvim
 ---

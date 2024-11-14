@@ -1,6 +1,3 @@
--- TODO: telescope ext
---telescope.load_extension('repos')
-
 ---@type LazySpec
 local dependencies = {
     "2kabhishek/utils.nvim",

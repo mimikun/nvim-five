@@ -1,12 +1,9 @@
--- TODO: its
-
 ---@type LazySpec
 local spec = {
     "nvim-telescope/telescope.nvim",
     --lazy = false,
     cmd = "Telescope",
     keys = require("plugins.configs.telescope-nvim.keys"),
-    --event = "VeryLazy",
     dependencies = require("plugins.configs.telescope-nvim.dependencies"),
     config = function()
         local telescope = require("telescope")
