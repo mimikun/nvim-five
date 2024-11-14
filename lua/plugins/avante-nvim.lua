@@ -38,7 +38,8 @@ local dependencies = {
     "zbirenbaum/copilot.lua",
     "HakonHarnes/img-clip.nvim",
     "MeanderingProgrammer/render-markdown.nvim",
-    "takeshiD/avante-status.nvim",
+    -- BUG: this plugin is not working, document not found. fxxk
+    --{ "takeshiD/avante-status.nvim", lazy = false },
 }
 
 ---@type string
