@@ -1,8 +1,7 @@
 # plugin repo url list
 
-- https://github.com/
+## installed
 
----
 - https://github.com/goolord/alpha-nvim
 	- https://github.com/nvim-tree/nvim-web-devicons
 	- https://github.com/nvim-lua/plenary.nvim
@@ -205,4 +204,19 @@
 	- https://github.com/Zeioth/mason-extra-cmds
 	- https://github.com/nvimtools/none-ls.nvim
 	- https://github.com/jay-babu/mason-null-ls.nvim
+
+## not installed
+
+- https://github.com/saghen/blink.cmp
+    - https://github.com/saghen/blink.compat
+	- https://github.com/rafamadriz/friendly-snippets
+    - https://github.com/L3MON4D3/LuaSnip
+	- https://github.com/folke/lazydev.nvim
+	- https://github.com/hrsh7th/cmp-emoji
+	- https://github.com/zbirenbaum/copilot-cmp
+    - https://github.com/giuxtaposition/blink-cmp-copilot
+- https://github.com/vim-skk/eskk.vim
+
 ---
+
+- https://github.com/

@@ -1,3 +1,5 @@
+local global = require("config.global")
+
 ---@type LazySpec[]
 local dependencies = {
     "saghen/blink.compat",
@@ -9,10 +11,8 @@ local dependencies = {
 
 if require("config.settings").use_github_copilot then
     table.insert(dependencies, "zbirenbaum/copilot.lua")
-    table.insert(dependencies, "zbirenbaum/copilot-cmp")
+    table.insert(dependencies, "giuxtaposition/blink-cmp-copilot")
 end
-
-local global = require("config.global")
 
 ---@type table
 local enabled_providers = {
@@ -87,8 +87,9 @@ local sources = {
         },
         copilot = {
             name = "copilot",
-            module = "blink.compat.source",
-            enabled = false,
+            module = "blink-cmp-copilot",
+            enabled = true,
+            score_offset = -3,
         },
     },
 }
@@ -166,8 +167,8 @@ local spec = {
     lazy = false,
     dependencies = dependencies,
     opts = opts,
-    --cond = false,
-    --enabled = false,
+    cond = false,
+    enabled = false,
 }
 
 return spec

@@ -1,7 +1,6 @@
 -- NOTE: only be enabled at Home-azusa and Work-Windows
+---@type boolean
 local cond = require("config.settings").use_codecompanion
--- TODO: avante.nvim setting now
-cond = false
 
 ---@type LazySpec
 local spec = {

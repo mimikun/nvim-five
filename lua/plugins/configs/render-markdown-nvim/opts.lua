@@ -1,3 +1,7 @@
+local global = require("config.global")
+
+local latex_enabled = global.is_home and global.is_linux
+
 ---@type table
 local opts = {
     file_types = { "markdown", "vimwiki", "Avante" },
@@ -7,7 +11,7 @@ local opts = {
         enabled = true,
     },
     latex = {
-        enabled = require("config.global").is_windows and false or true,
+        enabled = latex_enabled,
     },
     heading = {
         icons = { "󰲡 ", "󰲣 ", "󰲥 ", "󰲧 ", "󰲩 ", "󰲫 " },

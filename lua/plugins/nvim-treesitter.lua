@@ -1,7 +1,3 @@
--- TODO: its
-
-local global = require("config.global")
-
 ---@type LazySpec[]
 local dependencies = {
     "windwp/nvim-ts-autotag",
@@ -19,7 +15,7 @@ local opts = {
     -- NOTE:
     -- If your human rights are being violated,
     -- you will need to repeatedly press the Enter-key during initial setup.
-    sync_install = not global.is_human_rights,
+    sync_install = not require("config.global").is_human_rights,
     textsubjects = {
         enable = true,
         -- (Optional) keymap to select the previous selection

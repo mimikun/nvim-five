@@ -54,7 +54,8 @@ local spec = {
         EskkDisablePre - |eskk-disable-pre|
         ]]
     end,
-    --cond = false,
+    cond = false,
+    enabled = false,
 }
 
 return spec

@@ -1,6 +1,3 @@
----@type boolean
-local cond = require("config.settings").use_none_ls
-
 ---@type LazySpec
 local spec = {
     "nvimtools/none-ls.nvim",
@@ -42,8 +39,8 @@ local spec = {
 
         null_ls.setup(opts)
     end,
-    cond = cond,
-    enabled = cond,
+    --cond = false,
+    --enabled = false,
 }
 
 return spec
