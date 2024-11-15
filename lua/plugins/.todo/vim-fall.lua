@@ -42,7 +42,7 @@ local spec = {
 }
 
 return spec
-
+--[[
 "https://github.com/vim-denops/denops.vim",
 "https://github.com/vim-denops/denops-shared-server.vim",
 "https://github.com/vim-skk/skkeleton",
@@ -52,3 +52,4 @@ return spec
 "https://github.com/lambdalisue/vim-kensaku-command",
 "https://github.com/lambdalisue/vim-kensaku-search",
 "https://github.com/vim-fall/fall.vim",
+]]
